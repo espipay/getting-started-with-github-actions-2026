@@ -9,4 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - run: echo "Hello Christine from Github actions!"
+    
+      - name: Say Hello Joy
+        run: echo "Hello Christine from Github actions!"
+
+      - name: Checkout Repo
+        uses: actions/checkout@v6
+
+      - name: List repo Files
+        run: ls -la
